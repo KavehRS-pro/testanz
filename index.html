@@ -3,7 +3,6 @@
 <head>
     <Title>DataMining Dep. (Test Tv)</Title>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <script type="text/javascript" src="analytics.min.js"></script>
     <script type="text/javascript" src='playerActions.js'></script>
 </head>
@@ -52,11 +51,12 @@
     bindPlayer(0);
 // send username 
     document.getElementById("login-button").onclick = function () {
-        sessionFactory.init();
+        sessionFactory.init("karbar");
     }
     // send logout
     document.getElementById("logout-button").onclick = function () {
-        sessionFactory.expire();
+        sessionFactory.expire("karbar");
     }
 </script>
 </html>
+
