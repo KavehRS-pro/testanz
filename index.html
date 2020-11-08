@@ -51,11 +51,11 @@
     bindPlayer(0);
 // send username 
     document.getElementById("login-button").onclick = function () {
-        sessionFactory.init();
+        sessionFactory.init("karbar");
     }
     // send logout
     document.getElementById("logout-button").onclick = function () {
-        sessionFactory.expire();
+        sessionFactory.expire("karbar");
     }
 </script>
 </html>
